@@ -1,0 +1,82 @@
+# ===========================
+# PYTHON
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+
+# Virtual envs
+venv/
+env/
+.venv/
+.env/
+ENV/
+.env
+
+# ===========================
+# DJANGO
+# ===========================
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+logs/
+*.pot
+*.log
+
+# Local settings
+/local_settings.py
+/local.py
+/secrets.json
+
+# Coverage / reports
+.coverage
+htmlcov/
+coverage.xml
+
+# ===========================
+# PYCHARM / INTELLIJ IDEA
+# ===========================
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+*.iml
+modules.xml
+workspace.xml
+
+# ===========================
+# OS / TEMP FILES
+# ===========================
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ===========================
+# GIT
+# ===========================
+.gitignore~
