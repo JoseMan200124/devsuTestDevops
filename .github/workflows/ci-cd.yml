@@ -7,7 +7,12 @@ on:
     branches: [ "main" ]
 
 env:
-  IMAGE_NAME: jdman2001/devsutestdevops
+  IMAGE_NAME: jdman2001/devsu-test-devops
+
+  DJANGO_SECRET_KEY: "dummy-secret-key-for-ci-only"
+  DJANGO_DEBUG: "True"
+  DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1"
+  DATABASE_NAME: "db.sqlite3"
 
 jobs:
   build_and_test:
@@ -28,7 +33,7 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Run Flake8
-        run: flake8 .
+        run: python -m flake8 .
 
       - name: Run Bandit
         run: bandit -r .
