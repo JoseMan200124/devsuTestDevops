@@ -8,7 +8,6 @@ on:
 
 env:
   IMAGE_NAME: jdman2001/devsu-test-devops
-
   DJANGO_SECRET_KEY: "dummy-secret-key-for-ci-only"
   DJANGO_DEBUG: "True"
   DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1"
